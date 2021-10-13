@@ -1,3 +1,6 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+
 # pylint: skip-file
 """Set up proper configurations for CIDR integration"""
 import json
