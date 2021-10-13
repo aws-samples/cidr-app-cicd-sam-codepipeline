@@ -1,0 +1,21 @@
+version = 0.1
+
+[app.deploy.parameters]
+stack_name = "cidr-api-sam-cli"
+s3_bucket = ""
+s3_prefix = "cidr-api-sam-cli"
+region = "us-west-2"
+profile = "default"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
+
+[pipeline.deploy.parameters]
+stack_name = "sam-codepipeline-stack"
+s3_bucket = ""
+s3_prefix = "sam-codepipeline-stack"
+region = "us-west-2"
+profile = "default"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []

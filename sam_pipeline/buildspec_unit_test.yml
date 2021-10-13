@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - pip install --upgrade pip
+      - pip install pytest
+  build:
+    commands:
+      # trigger the unit tests here
+      - echo 'Running unit tests'
+      - pytest ./cidr_management/unit_test/ -s
