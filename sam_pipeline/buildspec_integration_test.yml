@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - pip install --upgrade pip
+      - pip install behave
+  build:
+    commands:
+      # trigger the integration tests here
+      - echo 'Running integration tests'
+      - python -m behave cidr_management/integ_test/ --summary --verbose --no-capture --no-capture-stderr --junit
+reports: #New
+  CidrApiIntegTestReports: # CodeBuild will create a report group called "CidrApiIntegTestReports".
+    files: #Store all of the files
+      - '**/*'
+    base-directory: 'reports' # Location of the reports
