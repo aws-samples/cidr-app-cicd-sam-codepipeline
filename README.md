@@ -95,7 +95,7 @@ sam pipeline bootstrap
 # The below command will generate a 2-stage pipeline. For this demo, provide 'Dev' as both the 1st and 2nd stage.
 sam pipeline init
 ```
-* ###Example output of 'sam pipeline init'. 
+* ### Example output of 'sam pipeline init'. 
 
 ![Init](docs/sam_pipeline_init.png)
 
