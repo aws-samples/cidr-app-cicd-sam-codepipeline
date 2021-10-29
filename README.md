@@ -99,7 +99,8 @@ sam pipeline init
 
 ![Init](docs/sam_pipeline_init.png)
 
-## Deploy pre-configured CodePipeline (The provided sam_codepipeline.yaml is an edited version of pipeline.yaml)
+## Deploy pre-configured CodePipeline 
+(The provided sam_codepipeline.yaml is an edited version of pipeline.yaml)
 ```shell 
 # Update parameters section of sam_codepipeline.yaml with template parameters from pipeline.yaml
 sam deploy --template sam_codepipeline.yaml --config-env default
