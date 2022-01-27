@@ -304,7 +304,7 @@ Resources:
               - !GetAtt PipelineArtifactsBucket.Arn
             Condition:
               Bool:
-                aws:SecureTransport: false
+                aws:SecureTransport: true
           - Action:
               - s3:*
             Effect: Allow
@@ -342,7 +342,7 @@ Resources:
               - !GetAtt PipelineArtifactsLoggingBucket.Arn
             Condition:
               Bool:
-                aws:SecureTransport: false
+                aws:SecureTransport: true
 
   CodePipelineExecutionRole:
     Type: AWS::IAM::Role
